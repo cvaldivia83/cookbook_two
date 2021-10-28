@@ -1,7 +1,7 @@
 class View
   def list_recipes_to_user(recipes_array)
     recipes_array.each_with_index do |item, index|
-      puts "#{index + 1} - #{item.done? ? "[x]" : "[ ]"} - #{item.name} - #{item.description} - #{item.rating}"
+      puts "#{index + 1} - #{item.done? ? "[x]" : "[ ]"} - #{item.name} - #{item.description} - rating: #{item.rating} - #{item.prep_time}"
     end
   end
 
